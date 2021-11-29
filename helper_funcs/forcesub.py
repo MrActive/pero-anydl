@@ -40,4 +40,4 @@ async def ForceSub(bot: Client, cmd: Message):
             disable_web_page_preview=True
         )
         return 400
-    return 200
+    return 400
