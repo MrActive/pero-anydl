@@ -44,16 +44,9 @@ async def rename_doc(bot, update):
             )
             return
         caption_str = ""
-        caption_str += "<b>"
+        caption_str += ""
         caption_str += file_name
-        caption_str += "</b>"
-        if Config.CHANNEL_URL is not None:
-            caption_str += "\n\nJoin: "
-            caption_str += "<a href='"
-            caption_str += f"{Config.CHANNEL_URL}"
-            caption_str += "'>"
-            caption_str += f"{Config.CHANNEL_URL}"
-            caption_str += "</a>"
+        caption_str += ""
         download_location = Config.DOWNLOAD_LOCATION + "/"
         a = await bot.send_message(
             chat_id=update.chat.id,
