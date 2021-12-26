@@ -74,16 +74,9 @@ async def ddl_call_back(bot, update):
                 l = entity.length
                 youtube_dl_url = youtube_dl_url[o:o + l]
     caption_str = ""
-    caption_str += "<b>"
+    caption_str += ""
     caption_str += custom_file_name
-    caption_str += "</b>"
-    if Config.CHANNEL_URL is not None:
-        caption_str += "\n\nJoin and Support: "
-        caption_str += "<a href='"
-        caption_str += f"{Config.CHANNEL_URL}"
-        caption_str += "'>"
-        caption_str += f"{Config.CHANNEL_URL}"
-        caption_str += "</a>"
+    caption_str += ""
     start = datetime.now()
     await bot.edit_message_text(
         text=Translation.DOWNLOAD_START,
