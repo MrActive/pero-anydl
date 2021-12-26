@@ -74,9 +74,7 @@ async def ddl_call_back(bot, update):
                 l = entity.length
                 youtube_dl_url = youtube_dl_url[o:o + l]
     caption_str = ""
-    caption_str += ""
     caption_str += custom_file_name
-    caption_str += ""
     start = datetime.now()
     await bot.edit_message_text(
         text=Translation.DOWNLOAD_START,
